@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.row {
+    width: 30%;
+    background-color: rgb(241 240 240);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px #dddcdc;
+
+}
+
+input:focus:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.gap-46 {
+    gap: 46px;
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.g-5 {
+    gap: 5px;
+}
+
+.g-10 {
+    gap: 10px;
+}
+
+.f-s-20 {
+    font-size: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.pt-25 {
+    padding-top: 25px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.add-text {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentColor;
+    padding: 0;
+    border: 1px solid rgb(219, 219, 219);
+    box-sizing: content-box;
+    height: auto;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    -webkit-animation-name: mui-auto-fill-cancel;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-animation-duration: 10ms;
+    animation-duration: 10ms;
+    resize: none;
+    padding-top: 0;
+    padding: 10px;
+    box-shadow: 2px 5px 5px #dddcdc;
+    border-radius: 10px;
+}
+
+
+#btnAddText {
+    border: 1px solid #d5d2d2;
+    border-radius: 10px;
+    background: #ffbdbd;
+    height: 50px;
+    box-shadow: 2px 5px 5px #dddcdc;
+}
+
+.element-list {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    box-shadow: 2px 5px 5px #dddcdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove,
+.edit {
+    background: red;
+    border: 1px solid #c3c3c3;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+    width: 15%;
+}
+
+.paragraph {
+    width: 100%;
+}
+
+div#element {
+    gap: 14px;
+}
