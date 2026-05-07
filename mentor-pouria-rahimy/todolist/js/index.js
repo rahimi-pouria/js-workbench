@@ -11,8 +11,7 @@ const addFeature = (item) => {
     div.setAttribute('data-id', item.id)
 
     const paragraph = document.createElement('p')
-    let text = document.createTextNode(item.name)
-    paragraph.appendChild(text)
+    paragraph.textContent = item.name
     paragraph.classList.add('paragraph')
 
     let btnRemove = document.createElement('button')
@@ -38,11 +37,64 @@ const addFeature = (item) => {
             feature.splice(index, 1)
         }
     })
+
+    // btn edit
+    btnEdit.addEventListener('click', () => {
+        const index = feature.findIndex(f => f.id === item.id)
+
+        if (index !== -1) {
+            btnEdit.classList.add('hiden')
+            btnRemove.classList.add('hiden')
+            let divEdit = document.createElement('div')
+            let inputEdit = document.createElement('input')
+            let btnSubmit = document.createElement('button')
+            let btnCancel = document.createElement('button')
+            btnSubmit.textContent = 'submit'
+            btnCancel.textContent = 'cancel'
+            btnSubmit.classList.add('submit')
+            btnCancel.classList.add('remove')
+            divEdit.classList.add('editTxt')
+            inputEdit.classList.add('add-text')
+            inputEdit.classList.add('w-100')
+            divEdit.appendChild(inputEdit)
+            divEdit.appendChild(btnSubmit)
+            divEdit.appendChild(btnCancel)
+            div.appendChild(divEdit)
+            inputEdit.value = paragraph.textContent
+
+            paragraph.classList.add('hiden')
+            btnSubmit.addEventListener('click', () => {
+                let newText = inputEdit.value
+                item.name = newText
+                divEdit.remove()
+                paragraph.classList.remove('hiden')
+                btnEdit.classList.remove('hiden')
+                btnRemove.classList.remove('hiden')
+                btnSubmit.classList.add('hiden')
+                btnCancel.classList.add('hiden')
+                inputEdit.classList.add('hiden')
+                paragraph.textContent = newText
+            })
+            btnCancel.addEventListener('click', () => {
+                divEdit.remove()
+                paragraph.classList.remove('hiden')
+                btnEdit.classList.remove('hiden')
+                btnRemove.classList.remove('hiden')
+                btnSubmit.classList.add('hiden')
+                btnCancel.classList.add('hiden')
+                inputEdit.classList.add('hiden')
+            })
+        }
+    })
 }
 
 
 // btn add text
 btnAddText.addEventListener('click', () => {
+    if (inputText.value === '') {
+        alert('please complte field')
+        return
+    }
     txt = inputText.value
     if (txt.trim() === '') return
     counter++

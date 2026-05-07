@@ -138,10 +138,31 @@ input:focus:focus {
     width: 15%;
 }
 
+.submit {
+    background: rgb(115, 255, 80);
+    border: 1px solid #c3c3c3;
+    padding: 8px;
+    color: white;
+    border-radius: 10px;
+    width: 15%;
+}
+
+
 .paragraph {
     width: 100%;
 }
 
 div#element {
     gap: 14px;
+}
+
+.editTxt {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.hiden {
+    display: none;
+    width: 0 !important;
 }
