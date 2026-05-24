@@ -1,0 +1,63 @@
+div#caroucel {
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body-caroucel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+}
+
+.cerousel-item{
+    width: 100%;
+}
+
+.cerousel-item > img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.controller-slider {
+    position: absolute;
+    top: 40em;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span.arrow-right,
+span.arrow-left {
+    background: #d3d3d3;
+    padding: 6px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.caroucel-item{
+    width: 100%;
+}
+
+.active{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.photo-slider{
+    width: 100%;
+    object-fit: cover;
+}
