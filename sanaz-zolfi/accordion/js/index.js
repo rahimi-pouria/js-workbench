@@ -7,7 +7,7 @@ headers.forEach((item,index), => {
 des.forEach((des,i), => {
 des.classList.remove('open');
 des.classList.add('close');
-if(ind3x === i){
+if(index === i){
 des.classList.toggle('close');
 }
 })
