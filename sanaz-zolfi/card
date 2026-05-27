@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="CSS/style.css" rel="stylesheet">
+		<title>تمرین اول|اصلاح شده</title>
+</head>
+<body>
+		<div class="card">
+				<div class="card-header">
+						<img src="Img/Tec.jpg" alt="AI-inteligent">
+				</div>
+				<div class="content">
+						<div class="description">
+								این یک کارت نمونه برای تمرین مصاحبه است.
+								توضیحات در چهار خط کوتاه و مفید نوشته شده تا فضای تمیز و استانداردی داشته باشیم.
+								هدف ایجاد یک المان کاربردی با دکمه و رویداد جاوااسکریپت است.
+								با کلیک روی دکمه، آلرت نمایش داده می‌شود و نام شما در کنسول ثبت می‌گردد.
+						</div>
+						<button class="btn" id="button">نمایش پیام</button>
+				</div>
+		</div>
+		<script src="JS/script.js"></script>
+</body>
+</html>
