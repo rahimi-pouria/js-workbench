@@ -55,7 +55,6 @@ const funcLibrery = (data) => {
       showName
   }
 }
-
-
+// show result
 const result = funcLibrery(library)
 console.log(result)
