@@ -1,0 +1,16 @@
+.d-flex{
+    display:flex
+}
+.flex-column{
+    flex-direction: column;
+}
+
+#showNames{
+    color: red;
+    font-size: 28px;
+}
+
+#showMin{
+    color: blue;
+    font-size: 26px;
+}
