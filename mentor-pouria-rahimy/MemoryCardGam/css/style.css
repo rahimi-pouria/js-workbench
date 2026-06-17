@@ -1,0 +1,164 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: #f4c531;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.d-flex{
+    display: flex !important;
+}
+
+.justify-content-end{
+    justify-content: end !important;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.card-game {
+    background: white;
+    width: 37%;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.header-game {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+
+.counter-game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.show-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn.btn-start-game {
+    background: black;
+    color: white;
+    padding: 15px 94px;
+    border-radius: 8px;
+}
+
+.subtitle {
+    background: white;
+    padding: 8px;
+}
+
+.subtitle > span {
+    font-size: 20px;
+    font-family: math;
+}
+
+.title > h2 {
+    font-size: 26px;
+    font-family: math;
+}
+
+.footer-title {
+    background: black;
+    color: white;
+    padding: 8px;
+
+}
+
+.footer-title > p {
+    font-size: 25px;
+    font-family: math;
+}
+
+.body-game{
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+   justify-content: center;
+   position: relative;
+}
+
+.avilable-game {
+    position: fixed;
+    width: 35%;
+    height: 56vh;
+    top: 220px;
+    left: 20;
+    background-color: rgba(255, 255, 255, 0.55);
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+}
+
+.card {
+    width: 118px;
+    height: 118px;
+    cursor: pointer;
+    transition: 0.6s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #000;
+     transform-style: preserve-3d;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.backFlip{
+     transform: rotateY(-180deg);
+}
+
+.w-25{
+    width: 25%;
+}
+.w-50{
+    width: 50%;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.timer-card-game, .move {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

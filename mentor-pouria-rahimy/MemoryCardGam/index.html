@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-game">
+            <div class="header-game">
+
+            <div class="counter-game w-25">
+                <!-- counter -->
+                <div class="move d-flex align-items-center">
+                    <h4 class="title-counter">Moves: </h4>
+                    <p class="show-counter" id="showCounter">0</p>
+                </div>
+            </div>
+            <!-- title game -->
+            <div class="title w-50 align-items-center d-flex flex-column">
+                <h2>Memory Card Game</h2>
+                <div class="footer-title">
+                    <p>HTML, CSS & Javascript</p>
+                </div>
+            </div>
+            <!-- timer -->
+            <div class="fimer-game w-25">        
+                <div class="timer-card-game d-flex align-items-center">
+                    <h4 class="timer-title-game">Timer: </h4>
+                    <p class="show-timer" id="show-timer">
+                        <span class="minutes" id="minutes">00</span> 
+                    : <span class="secound" id="secound">00</span>
+                    </p>
+                </div>
+            </div>
+            </div>
+            <!-- body game -->
+            <div class="body-game" id="boody-game"></div>
+            <div class="avilable-game" id="avilable-game"></div>
+             <!-- show btn -->
+            <div class="show-btn">
+                 <button class="btn btn-start-game" id="start-game">start game</button>
+                 <button class="newGame btn-start-game" id="newGame">new Game</button>
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="overlay" id="overlay">
+            <div class="modal" id="modal">
+                <div class="header-modal w-100">
+                    <div class="title-header">
+                        <h2 class="heading-title-modal">Start Memory Card Game</h2>
+                    </div>
+                    <div class="close-modal">
+                        <button class="close" id="close" onclick="closeModal()">&times;</button>
+                    </div>
+                </div>
+                    <hr>
+                <div class="body-modal">
+
+                    <div class="choos-timer">
+                        <label for="timerInput" class="label-timer">Timer (seconds)</label>
+                        <div class="hanleError">
+                            <input type="number" id="timerInput" min="10" step="1" placeholder="example 60">
+                            <p class="error-timer" id="error-timer">please fill element</p>
+                        </div>
+                    </div>
+
+                    <div class="number-error">
+                        <label for="mistakeInput" class="label-max">Max Mistakes</label>
+                        <div class="hanleError">
+                            <input type="number" id="mistakeInput" min="1" step="1" placeholder="example 5">
+                            <p class="error-move" id="error-move">please fill element</p>
+                        </div>
+                    </div>
+                    <!-- <div class="choose-timer">
+                        <input type="checkbox" id="noTimer" checked="true">
+                        <label>No Timer Mode</label>
+                    </div> -->
+                </div>
+                <div class="footer-modal">
+                    <button class="btn-close" onclick="closeModal()">close</button>
+                    <button class="btn-accept" id="accept">start</button>
+                </div>
+            </div>
+        </div>
+   <div id="fireworks" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.7/dist/index.umd.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
